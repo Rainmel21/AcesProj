@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Buttons with Text Inside</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ddd;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            width: 50%;
+        }
+
+        .category {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .category h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            
+        }
+
+        .radio-group {
+            display: flex;
+            gap:10px;
+        }
+
+        .radio-group label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: white;
+            border: 2px solid #000;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .radio-group input[type="radio"] {
+            display: none;
+        }
+
+        .radio-group input[type="radio"]:checked + label {
+            background-color: #209e00;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="category">
+        <h3>Music</h3>
+        <div class="radio-group">
+            <input type="radio" id="musicL" name="music" value="L">
+            <label for="musicL">L</label>
+            <input type="radio" id="musicN" name="music" value="N">
+            <label for="musicN">N</label>
+            <input type="radio" id="musicD" name="music" value="D">
+            <label for="musicD">D</label>
+        </div>
+    </div>
+
+    <div class="category">
+        <h3>Clothes Designer</h3>
+        <div class="radio-group">
+            <input type="radio" id="designerL" name="designer" value="L">
+            <label for="designerL">L</label>
+            <input type="radio" id="designerN" name="designer" value="N">
+            <label for="designerN">N</label>
+            <input type="radio" id="designerD" name="designer" value="D">
+            <label for="designerD">D</label>
+        </div>
+    </div>
+
+    <div class="category">
+        <h3>Photographer</h3>
+        <div class="radio-group">
+            <input type="radio" id="photographerL" name="photographer" value="L">
+            <label for="photographerL">L</label>
+            <input type="radio" id="photographerN" name="photographer" value="N">
+            <label for="photographerN">N</label>
+            <input type="radio" id="photographerD" name="photographer" value="D">
+            <label for="photographerD">D</label>
+        </div>
+    </div>
+
+    <div class="category">
+        <h3>Dancer</h3>
+        <div class="radio-group">
+            <input type="radio" id="dancerL" name="dancer" value="L">
+            <label for="dancerL">L</label>
+            <input type="radio" id="dancerN" name="dancer" value="N">
+            <label for="dancerN">N</label>
+            <input type="radio" id="dancerD" name="dancer" value="D">
+            <label for="dancerD">D</label>
+        </div>
+    </div>
+
+    <div class="category">
+        <h3>Artistic Painter</h3>
+        <div class="radio-group">
+            <input type="radio" id="painterL" name="painter" value="L">
+            <label for="painterL">L</label>
+            <input type="radio" id="painterN" name="painter" value="N">
+            <label for="painterN">N</label>
+            <input type="radio" id="painterD" name="painter" value="D">
+            <label for="painterD">D</label>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
